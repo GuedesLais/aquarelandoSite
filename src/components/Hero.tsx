@@ -1,5 +1,12 @@
 
 const Hero = () => {
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
@@ -35,10 +42,16 @@ const Hero = () => {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <button className="bg-gradient-to-r from-aqua-orange to-aqua-yellow text-white px-8 py-4 rounded-full font-semibold text-lg hover:scale-105 transition-all duration-300 shadow-2xl">
+          <button 
+            onClick={() => scrollToSection('quem-somos')}
+            className="bg-gradient-to-r from-aqua-orange to-aqua-yellow text-white px-8 py-4 rounded-full font-semibold text-lg hover:scale-105 transition-all duration-300 shadow-2xl"
+          >
             Saiba Mais
           </button>
-          <button className="bg-gradient-to-r from-aqua-blue to-aqua-purple text-white px-8 py-4 rounded-full font-semibold text-lg hover:scale-105 transition-all duration-300 shadow-2xl">
+          <button 
+            onClick={() => scrollToSection('doacoes')}
+            className="bg-gradient-to-r from-aqua-blue to-aqua-purple text-white px-8 py-4 rounded-full font-semibold text-lg hover:scale-105 transition-all duration-300 shadow-2xl"
+          >
             Fazer Doação
           </button>
         </div>

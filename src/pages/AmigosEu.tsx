@@ -1,5 +1,5 @@
 
-import { Phone } from 'lucide-react';
+import AmigosEuHeader from '../components/AmigosEuHeader';
 
 const AmigosEu = () => {
   const atividades = [
@@ -13,24 +13,13 @@ const AmigosEu = () => {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Header com Logo */}
-      <header className="bg-white shadow-lg py-6">
-        <div className="container mx-auto px-4 text-center">
-          <img 
-            src="/lovable-uploads/a45d6356-ba89-4bda-a24e-42533899d6ff.png" 
-            alt="Amigos & Eu Logo" 
-            className="h-24 mx-auto mb-4"
-          />
-          <h1 className="text-3xl font-bold text-gray-800">ONG Amigos & Eu</h1>
-          <p className="text-gray-600 mt-2">Brinquedoteca Comunitária</p>
-        </div>
-      </header>
-
+      <AmigosEuHeader />
+      
       {/* Missão */}
-      <section className="py-16 bg-gradient-to-br from-blue-50 to-green-50">
+      <section className="pt-32 pb-8 bg-gradient-to-br from-blue-50 to-green-50">
         <div className="container mx-auto px-4 text-center">
-          <div className="max-w-4xl mx-auto bg-white rounded-3xl p-12 shadow-xl border-4 border-dashed border-aqua-blue">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-aqua-blue">Nossa Missão</h2>
+          <div className="max-w-4xl mx-auto bg-white rounded-3xl p-8 shadow-xl border-4 border-dashed border-aqua-blue">
+            <h2 className="text-2xl md:text-3xl font-bold mb-6 text-aqua-blue">Nossa Missão</h2>
             <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
               <strong>MISSÃO:</strong> Contribuir para o desenvolvimento integral da criança ao adolescente, 
               investindo na formação através da educação, arte, esporte e cultura, 
@@ -41,8 +30,44 @@ const AmigosEu = () => {
         </div>
       </section>
 
+      {/* Banner */}
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: `url('/lovable-uploads/e91f6dfd-efc9-4f72-af75-e9910fb8275b.png')`
+          }}
+        >
+          <div className="absolute inset-0 bg-black/30"></div>
+        </div>
+
+        {/* Content */}
+        <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-8 leading-tight">
+            <span className="inline-block transform hover:scale-105 transition-transform duration-300">
+              <span className="bg-gradient-to-r from-aqua-orange to-aqua-yellow bg-clip-text text-transparent drop-shadow-2xl">
+                Construindo Sonhos
+              </span>
+            </span>
+            <br />
+            <span className="inline-block transform hover:scale-105 transition-transform duration-300 delay-100">
+              <span className="bg-gradient-to-r from-aqua-blue to-aqua-purple bg-clip-text text-transparent drop-shadow-2xl">
+                Através do Esporte
+              </span>
+            </span>
+          </h1>
+          
+          <p className="text-xl md:text-2xl text-white/90 mb-12 leading-relaxed drop-shadow-lg">
+            Oferecemos um lugar seguro e cheio de oportunidades para que nossas crianças cresçam felizes, 
+            <br className="hidden md:block" />
+            longe das ruas e perto de seus sonhos.
+          </p>
+        </div>
+      </section>
+
       {/* Quem Somos */}
-      <section className="py-16 bg-gradient-to-br from-orange-50 to-yellow-50">
+      <section id="quem-somos" className="py-16 bg-gradient-to-br from-orange-50 to-yellow-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-aqua-orange">Quem Somos</h2>
           <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
@@ -79,7 +104,7 @@ const AmigosEu = () => {
       </section>
 
       {/* Atividades */}
-      <section className="py-16 bg-gradient-to-br from-purple-50 to-pink-50">
+      <section id="atividades" className="py-16 bg-gradient-to-br from-purple-50 to-pink-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-aqua-purple">Nossas Atividades</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -95,7 +120,7 @@ const AmigosEu = () => {
       </section>
 
       {/* Seja Voluntário */}
-      <section className="py-16 bg-gradient-to-r from-aqua-orange to-aqua-yellow">
+      <section id="seja-voluntario" className="py-16 bg-gradient-to-r from-aqua-orange to-aqua-yellow">
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8 text-white">Seja Voluntário!</h2>
@@ -117,7 +142,7 @@ const AmigosEu = () => {
       </section>
 
       {/* Doações */}
-      <section className="py-16 bg-gradient-to-br from-green-50 to-blue-50">
+      <section id="doacoes" className="py-16 bg-gradient-to-br from-green-50 to-blue-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-8 text-aqua-blue">Faça Sua Doação</h2>
@@ -152,7 +177,7 @@ const AmigosEu = () => {
       </section>
 
       {/* Galeria */}
-      <section className="py-16 bg-gradient-to-br from-purple-50 to-pink-50">
+      <section id="galeria" className="py-16 bg-gradient-to-br from-purple-50 to-pink-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-aqua-purple">Nossa Galeria</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
@@ -168,7 +193,7 @@ const AmigosEu = () => {
       {/* Footer */}
       <footer className="bg-gray-800 text-white py-8">
         <div className="container mx-auto px-4 text-center">
-          <p>&copy; 2024 ONG Amigos & Eu - Brinquedoteca Comunitária</p>
+          <p>&copy; 2024 ONG Amigos & Eu</p>
           <p className="text-gray-400 mt-2">Transformando vidas através da educação e do amor</p>
         </div>
       </footer>

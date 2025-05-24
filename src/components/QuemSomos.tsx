@@ -52,9 +52,6 @@ const QuemSomos = () => {
                   <span className="text-gray-500 text-sm">Foto 2</span>
                 </div>
               </div>
-              <div className="absolute -bottom-2 -left-2 w-12 h-12 bg-aqua-blue rounded-full flex items-center justify-center text-white text-2xl">
-                💝
-              </div>
             </div>
           </div>
         </div>

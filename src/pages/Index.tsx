@@ -3,6 +3,7 @@ import Header from '../components/Header';
 import Hero from '../components/Hero';
 import QuemSomos from '../components/QuemSomos';
 import ComQuemCaminhamos from '../components/ComQuemCaminhamos';
+import Doacoes from '../components/Doacoes';
 import Galeria from '../components/Galeria';
 import Footer from '../components/Footer';
 
@@ -13,6 +14,7 @@ const Index = () => {
       <Hero />
       <QuemSomos />
       <ComQuemCaminhamos />
+      <Doacoes />
       <Galeria />
       <Footer />
     </div>

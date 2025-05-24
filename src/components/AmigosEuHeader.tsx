@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 
-const Header = () => {
+const AmigosEuHeader = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const scrollToSection = (sectionId: string) => {
@@ -33,22 +33,28 @@ const Header = () => {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
             <button 
-              onClick={() => scrollToSection('inicio')}
-              className="bg-gradient-to-r from-aqua-yellow via-aqua-orange to-aqua-purple bg-clip-text text-transparent hover:scale-105 transition-all duration-300 font-medium"
-            >
-              Início
-            </button>
-            <button 
               onClick={() => scrollToSection('quem-somos')}
               className="bg-gradient-to-r from-aqua-yellow via-aqua-orange to-aqua-purple bg-clip-text text-transparent hover:scale-105 transition-all duration-300 font-medium"
             >
               Quem Somos
             </button>
             <button 
-              onClick={() => scrollToSection('com-quem-caminhamos')}
+              onClick={() => scrollToSection('atividades')}
               className="bg-gradient-to-r from-aqua-yellow via-aqua-orange to-aqua-purple bg-clip-text text-transparent hover:scale-105 transition-all duration-300 font-medium"
             >
-              Com Quem Caminhamos
+              Nossas Atividades
+            </button>
+            <button 
+              onClick={() => scrollToSection('seja-voluntario')}
+              className="bg-gradient-to-r from-aqua-yellow via-aqua-orange to-aqua-purple bg-clip-text text-transparent hover:scale-105 transition-all duration-300 font-medium"
+            >
+              Seja Voluntário
+            </button>
+            <button 
+              onClick={() => scrollToSection('doacoes')}
+              className="bg-gradient-to-r from-aqua-yellow via-aqua-orange to-aqua-purple bg-clip-text text-transparent hover:scale-105 transition-all duration-300 font-medium"
+            >
+              Faça sua Doação
             </button>
             <button 
               onClick={() => scrollToSection('galeria')}
@@ -71,22 +77,28 @@ const Header = () => {
         {isMenuOpen && (
           <nav className="md:hidden pb-4 space-y-4">
             <button 
-              onClick={() => scrollToSection('inicio')}
-              className="block w-full text-left bg-gradient-to-r from-aqua-yellow via-aqua-orange to-aqua-purple bg-clip-text text-transparent hover:scale-105 transition-all duration-300 font-medium"
-            >
-              Início
-            </button>
-            <button 
               onClick={() => scrollToSection('quem-somos')}
               className="block w-full text-left bg-gradient-to-r from-aqua-yellow via-aqua-orange to-aqua-purple bg-clip-text text-transparent hover:scale-105 transition-all duration-300 font-medium"
             >
               Quem Somos
             </button>
             <button 
-              onClick={() => scrollToSection('com-quem-caminhamos')}
+              onClick={() => scrollToSection('atividades')}
               className="block w-full text-left bg-gradient-to-r from-aqua-yellow via-aqua-orange to-aqua-purple bg-clip-text text-transparent hover:scale-105 transition-all duration-300 font-medium"
             >
-              Com Quem Caminhamos
+              Nossas Atividades
+            </button>
+            <button 
+              onClick={() => scrollToSection('seja-voluntario')}
+              className="block w-full text-left bg-gradient-to-r from-aqua-yellow via-aqua-orange to-aqua-purple bg-clip-text text-transparent hover:scale-105 transition-all duration-300 font-medium"
+            >
+              Seja Voluntário
+            </button>
+            <button 
+              onClick={() => scrollToSection('doacoes')}
+              className="block w-full text-left bg-gradient-to-r from-aqua-yellow via-aqua-orange to-aqua-purple bg-clip-text text-transparent hover:scale-105 transition-all duration-300 font-medium"
+            >
+              Faça sua Doação
             </button>
             <button 
               onClick={() => scrollToSection('galeria')}
@@ -101,4 +113,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default AmigosEuHeader;
