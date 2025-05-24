@@ -17,19 +17,23 @@ const Doacoes = () => {
             <div className="space-y-4 text-left max-w-md mx-auto">
               <div className="flex justify-between">
                 <span className="font-semibold text-gray-600">Banco:</span>
-                <span className="text-gray-800">Banco do Brasil</span>
+                <span className="text-gray-800">Caixa Econômica Federal</span>
+              </div>
+              <div className="flex justify-between">
+                <span className="font-semibold text-gray-600">Tipo de Conta:</span>
+                <span className="text-gray-800">Poupança pessoa física - 1288</span>
               </div>
               <div className="flex justify-between">
                 <span className="font-semibold text-gray-600">Agência:</span>
-                <span className="text-gray-800">0000-0</span>
+                <span className="text-gray-800">0928</span>
               </div>
               <div className="flex justify-between">
                 <span className="font-semibold text-gray-600">Conta:</span>
-                <span className="text-gray-800">00000-0</span>
+                <span className="text-gray-800">000758098844-6</span>
               </div>
               <div className="flex justify-between">
                 <span className="font-semibold text-gray-600">PIX:</span>
-                <span className="text-gray-800">aquarelando@gmail.com</span>
+                <span className="text-gray-800">aquarelandoprojeto@gmail.com</span>
               </div>
             </div>
           </div>

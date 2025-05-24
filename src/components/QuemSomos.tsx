@@ -14,20 +14,22 @@ const QuemSomos = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 md:gap-16 max-w-6xl mx-auto">
-          {/* Primeira Pessoa */}
+          {/* Primeira Pessoa - Laala */}
           <div className="text-center">
             <div className="relative mb-6">
               <div className="w-48 h-48 mx-auto rounded-full bg-gradient-to-br from-aqua-orange to-aqua-yellow p-1">
-                <div className="w-full h-full rounded-full bg-gray-200 flex items-center justify-center">
-                  <span className="text-gray-500 text-sm">Foto 1</span>
-                </div>
+                <img 
+                  src="/lovable-uploads/1cba3dce-caf4-48f1-8f78-1f2c3c23757a.png" 
+                  alt="Laala"
+                  className="w-full h-full rounded-full object-cover"
+                />
               </div>
               <div className="absolute -bottom-2 -right-2 w-12 h-12 bg-aqua-orange rounded-full flex items-center justify-center text-white text-2xl">
                 🎨
               </div>
             </div>
             <div className="bg-white rounded-3xl p-8 shadow-xl">
-              <h3 className="text-2xl font-bold text-aqua-orange mb-4">Nome da Fundadora 1</h3>
+              <h3 className="text-2xl font-bold text-aqua-orange mb-4">Laala</h3>
               <p className="text-gray-700 leading-relaxed">
                 Apaixonada por arte e educação, sempre acreditou no poder transformador da criatividade. 
                 Com formação em pedagogia e anos de experiência com crianças, dedica sua vida a fazer a diferença 
@@ -36,10 +38,10 @@ const QuemSomos = () => {
             </div>
           </div>
 
-          {/* Segunda Pessoa */}
+          {/* Segunda Pessoa - Mari */}
           <div className="text-center">
             <div className="bg-white rounded-3xl p-8 shadow-xl mb-6">
-              <h3 className="text-2xl font-bold text-aqua-blue mb-4">Nome da Fundadora 2</h3>
+              <h3 className="text-2xl font-bold text-aqua-blue mb-4">Mari</h3>
               <p className="text-gray-700 leading-relaxed">
                 Especialista em desenvolvimento comunitário e gestão de projetos sociais. 
                 Sua paixão por transformar realidades através da educação e do esporte a levou a dedicar 
@@ -48,9 +50,11 @@ const QuemSomos = () => {
             </div>
             <div className="relative">
               <div className="w-48 h-48 mx-auto rounded-full bg-gradient-to-br from-aqua-blue to-aqua-purple p-1">
-                <div className="w-full h-full rounded-full bg-gray-200 flex items-center justify-center">
-                  <span className="text-gray-500 text-sm">Foto 2</span>
-                </div>
+                <img 
+                  src="/lovable-uploads/395b5c0d-2149-4027-9203-6cb41909d952.png" 
+                  alt="Mari"
+                  className="w-full h-full rounded-full object-cover"
+                />
               </div>
             </div>
           </div>

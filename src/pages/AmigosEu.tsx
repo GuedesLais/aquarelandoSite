@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 
@@ -14,11 +15,11 @@ const AmigosEu = () => {
 
   const atividades = [
     { nome: 'Ballet', emoji: '🩰', descricao: 'Aulas de ballet clássico para desenvolver coordenação e disciplina' },
-    { nome: 'Zumba', emoji: '💃', descricao: 'Dança fitness que combina exercício com diversão' },
+    { nome: 'Zumba', emoji: '💃', descricao: 'Dança fitness que combina exercício com diversão - para adultos' },
     { nome: 'Futebol', emoji: '⚽', descricao: 'Esporte que desenvolve trabalho em equipe e coordenação motora' },
-    { nome: 'Arte', emoji: '🎨', descricao: 'Atividades artísticas para estimular a criatividade' },
-    { nome: 'Música', emoji: '🎵', descricao: 'Aulas de música e canto para desenvolvimento cultural' },
-    { nome: 'Reforço Escolar', emoji: '📚', descricao: 'Apoio pedagógico para melhor desempenho escolar' }
+    { nome: 'Capoeira', emoji: '🥋', descricao: 'Arte marcial brasileira que combina luta, dança e música' },
+    // { nome: 'Música', emoji: '🎵', descricao: 'Aulas de música e canto para desenvolvimento cultural' },
+    // { nome: 'Reforço Escolar', emoji: '📚', descricao: 'Apoio pedagógico para melhor desempenho escolar' }
   ];
 
   return (
@@ -152,19 +153,21 @@ const AmigosEu = () => {
         </div>
       </section>
 
-      {/* Quem Somos */}
+      {/* Quem Somos - Agora com 3 pessoas */}
       <section id="quem-somos" className="py-16 bg-gradient-to-br from-orange-50 to-yellow-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-aqua-orange">Quem Somos</h2>
-          <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <div className="text-center">
               <div className="w-48 h-48 mx-auto rounded-full bg-gradient-to-br from-aqua-orange to-aqua-yellow p-1 mb-6">
-                <div className="w-full h-full rounded-full bg-gray-200 flex items-center justify-center">
-                  <span className="text-gray-500 text-sm">Foto Coordenadora</span>
-                </div>
+                <img 
+                  src="/lovable-uploads/dcc5134d-6045-48d8-a91e-3538303a4645.png" 
+                  alt="Euclides"
+                  className="w-full h-full rounded-full object-cover"
+                />
               </div>
               <div className="bg-white rounded-3xl p-6 shadow-lg">
-                <h3 className="text-xl font-bold text-aqua-orange mb-4">Coordenadora</h3>
+                <h3 className="text-xl font-bold text-aqua-orange mb-4">Euclides</h3>
                 <p className="text-gray-700">
                   Responsável pela coordenação geral dos projetos, com anos de experiência 
                   em desenvolvimento comunitário e educação infantil.
@@ -173,15 +176,33 @@ const AmigosEu = () => {
             </div>
             <div className="text-center">
               <div className="w-48 h-48 mx-auto rounded-full bg-gradient-to-br from-aqua-blue to-aqua-purple p-1 mb-6">
-                <div className="w-full h-full rounded-full bg-gray-200 flex items-center justify-center">
-                  <span className="text-gray-500 text-sm">Foto Educadora</span>
-                </div>
+                <img 
+                  src="/lovable-uploads/dcc5134d-6045-48d8-a91e-3538303a4645.png" 
+                  alt="Euclides"
+                  className="w-full h-full rounded-full object-cover"
+                />
               </div>
               <div className="bg-white rounded-3xl p-6 shadow-lg">
-                <h3 className="text-xl font-bold text-aqua-blue mb-4">Educadora Social</h3>
+                <h3 className="text-xl font-bold text-aqua-blue mb-4">Euclides</h3>
                 <p className="text-gray-700">
                   Especialista em pedagogia social, dedica-se ao desenvolvimento 
                   das atividades educativas e ao acompanhamento das crianças.
+                </p>
+              </div>
+            </div>
+            <div className="text-center">
+              <div className="w-48 h-48 mx-auto rounded-full bg-gradient-to-br from-aqua-purple to-aqua-pink p-1 mb-6">
+                <img 
+                  src="/lovable-uploads/dcc5134d-6045-48d8-a91e-3538303a4645.png" 
+                  alt="Euclides"
+                  className="w-full h-full rounded-full object-cover"
+                />
+              </div>
+              <div className="bg-white rounded-3xl p-6 shadow-lg">
+                <h3 className="text-xl font-bold text-aqua-purple mb-4">Euclides</h3>
+                <p className="text-gray-700">
+                  Coordenador de atividades esportivas e culturais, promovendo 
+                  o desenvolvimento físico e social das crianças.
                 </p>
               </div>
             </div>
@@ -193,7 +214,7 @@ const AmigosEu = () => {
       <section id="atividades" className="py-16 bg-gradient-to-br from-purple-50 to-pink-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-aqua-purple">Nossas Atividades</h2>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {atividades.map((atividade, index) => (
               <div key={index} className="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 text-center">
                 <div className="text-6xl mb-4">{atividade.emoji}</div>
@@ -215,7 +236,7 @@ const AmigosEu = () => {
               Sua contribuição pode fazer toda a diferença na vida de uma criança!
             </p>
             <a 
-              href="https://wa.me/5511999999999?text=Olá! Gostaria de ser voluntário na ONG Amigos & Eu" 
+              href="https://wa.me/5511989507885?text=Olá! Gostaria de ser voluntário na ONG Amigos & Eu" 
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-flex items-center space-x-3 bg-white text-aqua-orange px-8 py-4 rounded-full font-bold text-lg hover:scale-105 transition-all duration-300 shadow-2xl"
@@ -278,9 +299,32 @@ const AmigosEu = () => {
 
       {/* Footer */}
       <footer className="bg-gray-800 text-white py-8">
-        <div className="container mx-auto px-4 text-center">
-          <p>&copy; 2024 ONG Amigos & Eu</p>
-          <p className="text-gray-400 mt-2">Transformando vidas através da educação e do amor</p>
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Informações Legais */}
+            <div className="text-center md:text-left">
+              <h3 className="text-xl font-bold mb-4 text-blue-400">Informações Legais</h3>
+              <p className="text-gray-300">
+                <strong>CNPJ:</strong> 32.308.219/0001-49
+              </p>
+            </div>
+
+            {/* Contato */}
+            <div className="text-center">
+              <h3 className="text-xl font-bold mb-4 text-green-400">Contato</h3>
+              <div className="space-y-2">
+                <p className="text-gray-300">Suzano, SP · Jundiapeba, SP</p>
+                <p className="text-gray-300">+55 11 98950-7885</p>
+                <p className="text-gray-300">ongamigoseeu@gmail.com</p>
+              </div>
+            </div>
+
+            {/* Copyright */}
+            <div className="text-center md:text-right">
+              <p className="text-gray-400">&copy; 2024 ONG Amigos & Eu</p>
+              <p className="text-gray-400 mt-2">Transformando vidas através da educação e do amor</p>
+            </div>
+          </div>
         </div>
       </footer>
     </div>

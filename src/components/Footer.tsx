@@ -7,13 +7,13 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-3 gap-8 items-center">
           
-          {/* CNPJ */}
-          <div className="text-center md:text-left">
+          {/* CNPJ - Comentado */}
+          {/* <div className="text-center md:text-left">
             <h3 className="text-xl font-bold mb-4 text-aqua-yellow">Informações Legais</h3>
             <p className="text-gray-300">
               <strong>CNPJ:</strong> 00.000.000/0001-00
             </p>
-          </div>
+          </div> */}
 
           {/* Contact Info */}
           <div className="text-center">
@@ -25,7 +25,6 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="flex items-center justify-center space-x-2 text-green-400 hover:text-green-300 transition-colors duration-300"
               >
-                <span className="text-2xl">📱</span>
                 <span>(11) 99999-9999</span>
               </a>
               <a 
@@ -34,7 +33,6 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="flex items-center justify-center space-x-2 text-green-400 hover:text-green-300 transition-colors duration-300"
               >
-                <span className="text-2xl">📱</span>
                 <span>(11) 88888-8888</span>
               </a>
             </div>
@@ -49,7 +47,6 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="inline-flex items-center space-x-2 text-pink-400 hover:text-pink-300 transition-colors duration-300 hover:scale-110 transform"
             >
-              <span className="text-3xl">📷</span>
               <span className="font-medium">@aquarelandoprojeto</span>
             </a>
           </div>

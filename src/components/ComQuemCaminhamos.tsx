@@ -6,26 +6,26 @@ const ComQuemCaminhamos = () => {
       url: "/amigos-eu",
       isInternal: true
     },
-    {
-      nome: "Casa do Sorriso",
-      url: "#",
-      isInternal: false
-    },
-    {
-      nome: "Esperança Viva",
-      url: "#",
-      isInternal: false
-    },
-    {
-      nome: "Mãos que Ajudam",
-      url: "#",
-      isInternal: false
-    },
-    {
-      nome: "Futuro Brilhante",
-      url: "#",
-      isInternal: false
-    }
+    // {
+    //   nome: "Casa do Sorriso",
+    //   url: "#",
+    //   isInternal: false
+    // },
+    // {
+    //   nome: "Esperança Viva",
+    //   url: "#",
+    //   isInternal: false
+    // },
+    // {
+    //   nome: "Mãos que Ajudam",
+    //   url: "#",
+    //   isInternal: false
+    // },
+    // {
+    //   nome: "Futuro Brilhante",
+    //   url: "#",
+    //   isInternal: false
+    // }
   ];
 
   return (
