@@ -1,7 +1,17 @@
-
-import AmigosEuHeader from '../components/AmigosEuHeader';
+import { useState } from 'react';
+import { Menu, X } from 'lucide-react';
 
 const AmigosEu = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+    setIsMenuOpen(false);
+  };
+
   const atividades = [
     { nome: 'Ballet', emoji: '🩰', descricao: 'Aulas de ballet clássico para desenvolver coordenação e disciplina' },
     { nome: 'Zumba', emoji: '💃', descricao: 'Dança fitness que combina exercício com diversão' },
@@ -13,23 +23,99 @@ const AmigosEu = () => {
 
   return (
     <div className="min-h-screen bg-white">
-      <AmigosEuHeader />
-      
-      {/* Missão */}
-      <section className="pt-32 pb-8 bg-gradient-to-br from-blue-50 to-green-50">
-        <div className="container mx-auto px-4 text-center">
-          <div className="max-w-4xl mx-auto bg-white rounded-3xl p-8 shadow-xl border-4 border-dashed border-aqua-blue">
-            <h2 className="text-2xl md:text-3xl font-bold mb-6 text-aqua-blue">Nossa Missão</h2>
-            <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
-              <strong>MISSÃO:</strong> Contribuir para o desenvolvimento integral da criança ao adolescente, 
-              investindo na formação através da educação, arte, esporte e cultura, 
-              estendendo esse cuidado e amparo às famílias da nossa comunidade, 
-              construindo juntos um futuro mais colorido e promissor.
-            </p>
-          </div>
-        </div>
-      </section>
+      {/* Header */}
+      <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm shadow-lg">
+        <div className="container mx-auto px-4">
+          <div className="flex items-center justify-between py-4">
+            {/* Logo Original */}
+            <div className="relative">
+              <h1 className="text-3xl font-bold text-blue-600">
+                Amigos & Eu
+              </h1>
+              <div className="absolute -bottom-1 left-0 w-12 h-1 bg-gradient-to-r from-blue-400 to-green-400 rounded-full"></div>
+            </div>
 
+            {/* Desktop Navigation */}
+            <nav className="hidden md:flex space-x-8">
+              <button 
+                onClick={() => scrollToSection('quem-somos')}
+                className="text-blue-300 hover:text-blue-500 transition-colors duration-300 font-medium"
+              >
+                Quem Somos
+              </button>
+              <button 
+                onClick={() => scrollToSection('atividades')}
+                className="text-green-300 hover:text-green-500 transition-colors duration-300 font-medium"
+              >
+                Atividades
+              </button>
+              <button 
+                onClick={() => scrollToSection('seja-voluntario')}
+                className="text-purple-300 hover:text-purple-500 transition-colors duration-300 font-medium"
+              >
+                Seja Voluntário
+              </button>
+              <button 
+                onClick={() => scrollToSection('doacoes')}
+                className="text-orange-300 hover:text-orange-500 transition-colors duration-300 font-medium"
+              >
+                Doações
+              </button>
+              <button 
+                onClick={() => scrollToSection('galeria')}
+                className="text-pink-300 hover:text-pink-500 transition-colors duration-300 font-medium"
+              >
+                Galeria
+              </button>
+            </nav>
+
+            {/* Mobile Menu Button */}
+            <button 
+              className="md:hidden p-2 text-blue-600"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+            >
+              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
+
+          {/* Mobile Navigation */}
+          {isMenuOpen && (
+            <nav className="md:hidden pb-4 space-y-4">
+              <button 
+                onClick={() => scrollToSection('quem-somos')}
+                className="block w-full text-left text-blue-300 hover:text-blue-500 transition-colors duration-300 font-medium"
+              >
+                Quem Somos
+              </button>
+              <button 
+                onClick={() => scrollToSection('atividades')}
+                className="block w-full text-left text-green-300 hover:text-green-500 transition-colors duration-300 font-medium"
+              >
+                Atividades
+              </button>
+              <button 
+                onClick={() => scrollToSection('seja-voluntario')}
+                className="block w-full text-left text-purple-300 hover:text-purple-500 transition-colors duration-300 font-medium"
+              >
+                Seja Voluntário
+              </button>
+              <button 
+                onClick={() => scrollToSection('doacoes')}
+                className="block w-full text-left text-orange-300 hover:text-orange-500 transition-colors duration-300 font-medium"
+              >
+                Doações
+              </button>
+              <button 
+                onClick={() => scrollToSection('galeria')}
+                className="block w-full text-left text-pink-300 hover:text-pink-500 transition-colors duration-300 font-medium"
+              >
+                Galeria
+              </button>
+            </nav>
+          )}
+        </div>
+      </header>
+      
       {/* Banner */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         {/* Background Image */}
