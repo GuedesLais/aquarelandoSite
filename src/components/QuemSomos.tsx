@@ -14,12 +14,12 @@ const QuemSomos = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 md:gap-16 max-w-6xl mx-auto">
-          {/* Primeira Pessoa - Laala */}
+         
           <div className="text-center">
             <div className="relative mb-6">
               <div className="w-48 h-48 mx-auto rounded-full bg-gradient-to-br from-aqua-orange to-aqua-yellow p-1">
                 <img 
-                  src="/lovable-uploads/1cba3dce-caf4-48f1-8f78-1f2c3c23757a.png" 
+                  src="/uploads/1cba3dce-caf4-48f1-8f78-1f2c3c23757a.png" 
                   alt="Laala"
                   className="w-full h-full rounded-full object-cover"
                 />
@@ -29,29 +29,31 @@ const QuemSomos = () => {
               </div>
             </div>
             <div className="bg-white rounded-3xl p-8 shadow-xl">
-              <h3 className="text-2xl font-bold text-aqua-orange mb-4">Laala</h3>
+              <h3 className="text-2xl font-bold text-aqua-orange mb-4">Lais Guedes</h3>
               <p className="text-gray-700 leading-relaxed">
-                Apaixonada por arte e educação, sempre acreditou no poder transformador da criatividade. 
-                Com formação em pedagogia e anos de experiência com crianças, dedica sua vida a fazer a diferença 
-                na comunidade através de projetos sociais que unem arte, educação e amor.
+               Apaixonada por tecnologia e pelo universo dos games, encontrou na programação uma forma de expressar sua criatividade. 
+               Autodidata e determinada, aos 32 anos segue explorando novos conhecimentos todos os dias. 
+               Ama crianças e é completamente encantada pelos seus sobrinhos, com quem compartilha momentos de afeto, brincadeiras e aprendizado.
+
+
               </p>
             </div>
           </div>
 
-          {/* Segunda Pessoa - Mari */}
+         
           <div className="text-center">
             <div className="bg-white rounded-3xl p-8 shadow-xl mb-6">
-              <h3 className="text-2xl font-bold text-aqua-blue mb-4">Mari</h3>
+              <h3 className="text-2xl font-bold text-aqua-blue mb-4">Mariana Alves</h3>
               <p className="text-gray-700 leading-relaxed">
-                Especialista em desenvolvimento comunitário e gestão de projetos sociais. 
-                Sua paixão por transformar realidades através da educação e do esporte a levou a dedicar 
-                sua carreira ao terceiro setor, sempre buscando inovação e impacto social positivo.
+                Mari, 32 anos, é formada em Marketing e Design, e sua criatividade é o que move tudo o que faz. Apaixonada por descobrir o mundo, ama viajar e se inspirar em novas culturas e experiências.
+                Sempre pronta para ajudar, tem um coração generoso e um jeito acolhedor que conquista todos ao redor. É tão querida que vive rodeada de sobrinhos e afilhados,
+                e faz questão de estar presente na vida de cada um, com muito amor, carinho e boas risadas.
               </p>
             </div>
             <div className="relative">
               <div className="w-48 h-48 mx-auto rounded-full bg-gradient-to-br from-aqua-blue to-aqua-purple p-1">
                 <img 
-                  src="/lovable-uploads/395b5c0d-2149-4027-9203-6cb41909d952.png" 
+                  src="/uploads/395b5c0d-2149-4027-9203-6cb41909d952.png" 
                   alt="Mari"
                   className="w-full h-full rounded-full object-cover"
                 />

@@ -6,11 +6,11 @@ const Galeria = () => {
   
   // Placeholder images for the carousel
   const images = [
-    { src: 'https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=800&h=600&fit=crop', alt: 'Atividade 1' },
-    { src: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=600&fit=crop', alt: 'Atividade 2' },
-    { src: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&h=600&fit=crop', alt: 'Atividade 3' },
-    { src: 'https://images.unsplash.com/photo-1501854140801-50d01698950b?w=800&h=600&fit=crop', alt: 'Atividade 4' },
-    { src: 'https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=800&h=600&fit=crop', alt: 'Atividade 5' },
+    { src: '/uploads/galeria-2.jpg', alt: 'Atividade 1' },
+    { src: '/uploads/galeria-2.jpg', alt: 'Atividade 2' },
+    { src: '/uploads/galeria-2.jpg', alt: 'Atividade 3' },
+    { src: '/uploads/galeria-2.jpg', alt: 'Atividade 4' },
+    { src: '/uploads/galeria-2.jpg', alt: 'Atividade 5' },
   ];
 
   // Auto-advance carousel every 3 seconds

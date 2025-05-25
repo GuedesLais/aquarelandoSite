@@ -1,5 +1,4 @@
-
-import { Phone } from 'lucide-react';
+import { Phone, Instagram } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -16,8 +15,8 @@ const Footer = () => {
           </div> */}
 
           {/* Contact Info */}
-          <div className="text-center">
-            <h3 className="text-xl font-bold mb-4 text-aqua-blue">Contato</h3>
+          <div className="text-center md:pl-12">
+            <h3 className="text-xl font-bold mb-4 text-aqua-blue text-center">Contato</h3>
             <div className="space-y-3">
               <a 
                 href="https://wa.me/5511999999999" 
@@ -25,7 +24,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="flex items-center justify-center space-x-2 text-green-400 hover:text-green-300 transition-colors duration-300"
               >
-                <span>(11) 99999-9999</span>
+                <span>(11) 95444-7748 /(11) 98215-0626</span>
               </a>
               <a 
                 href="https://wa.me/5511888888888" 
@@ -33,28 +32,33 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="flex items-center justify-center space-x-2 text-green-400 hover:text-green-300 transition-colors duration-300"
               >
-                <span>(11) 88888-8888</span>
+               
               </a>
             </div>
           </div>
 
+          {/* Empty middle column for spacing */}
+          <div className="hidden md:block"></div>
+
           {/* Social Media */}
-          <div className="text-center md:text-right">
-            <h3 className="text-xl font-bold mb-4 text-aqua-purple">Redes Sociais</h3>
-            <a 
-              href="https://www.instagram.com/aquarelandoprojeto/" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="inline-flex items-center space-x-2 text-pink-400 hover:text-pink-300 transition-colors duration-300 hover:scale-110 transform"
-            >
-              <span className="font-medium">@aquarelandoprojeto</span>
-            </a>
+          <div className="text-center md:pr-12">
+            <h3 className="text-xl font-bold mb-4 text-aqua-purple text-center">Redes Sociais</h3>
+            <div className="flex justify-center">
+              <a 
+                href="https://www.instagram.com/aquarelandoprojeto/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center text-pink-400 hover:text-pink-300 transition-colors duration-300 hover:scale-110 transform p-2"
+              >
+                <Instagram size={32} />
+              </a>
+            </div>
           </div>
         </div>
 
         <div className="mt-12 pt-8 border-t border-gray-700 text-center">
           <p className="text-gray-400">
-            © 2024 Aquarelando - Todos os direitos reservados. Feito com 💝 para transformar vidas.
+            © 2024 Aquarelando - Todos os direitos reservados. Feito com amor para transformar vidas.
           </p>
         </div>
       </div>

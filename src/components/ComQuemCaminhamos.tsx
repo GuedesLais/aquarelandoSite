@@ -1,4 +1,3 @@
-
 const ComQuemCaminhamos = () => {
   const ongs = [
     {
@@ -41,14 +40,14 @@ const ComQuemCaminhamos = () => {
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
+        <div className="flex justify-center">
           {ongs.map((ong, index) => (
             <a
               key={index}
               href={ong.url}
-              target={ong.isInternal ? "_self" : "_blank"}
-              rel={ong.isInternal ? "" : "noopener noreferrer"}
-              className="group bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 border-2 border-transparent hover:border-aqua-orange"
+              target="_blank"
+              rel="noopener noreferrer"
+              className=" w-[400px] md:w-[450px] lg:w-[500px] group bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 border-2 border-transparent hover:border-aqua-orange"
             >
               <div className="text-center">
                 <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-aqua-orange to-aqua-yellow rounded-full flex items-center justify-center text-white text-2xl group-hover:animate-float">
