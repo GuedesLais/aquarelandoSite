@@ -1,7 +1,7 @@
 const ComQuemCaminhamos = () => {
   const ongs = [
     {
-      nome: "Amigos & Eu",
+      nome: "Ong Amigos & Eu",
       url: "/amigos-eu",
       isInternal: true
     },

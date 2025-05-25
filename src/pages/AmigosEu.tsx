@@ -297,8 +297,8 @@ const AmigosEu = () => {
               <h3 className="text-2xl font-bold mb-6 text-aqua-blue">Dados Bancários</h3>
               <div className="space-y-4 text-left max-w-md mx-auto">
                 <div className="flex justify-between">
-                  <span className="font-semibold text-gray-600">Banco:</span>
-                  <span className="text-gray-800">Banco do Brasil</span>
+                  <span className="font-semibold text-gray-600">Instituição:</span>
+                  <span className="text-gray-800">Cora SCFI</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="font-semibold text-gray-600">Agência:</span>
@@ -308,11 +308,7 @@ const AmigosEu = () => {
                   <span className="font-semibold text-gray-600">Conta:</span>
                   <span className="text-gray-800">5194003-3</span>
                 </div>
-                <div className="flex justify-between">
-                  <span className="font-semibold text-gray-600">Instituição:</span>
-                  <span className="text-gray-800">403 - Cora SCFI</span>
-                </div>
-                
+                               
                 <div className="flex justify-between">
                   <span className="font-semibold text-gray-600">PIX:</span>
                   <span className="text-gray-800"> CNPJ: 32.308.219/0001-49</span>
