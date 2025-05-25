@@ -45,7 +45,7 @@ const QuemSomos = () => {
             <div className="bg-white rounded-3xl p-8 shadow-xl mb-6">
               <h3 className="text-2xl font-bold text-aqua-blue mb-4">Mariana Alves</h3>
               <p className="text-gray-700 leading-relaxed">
-                Mari, 32 anos, é formada em Marketing e Design, e sua criatividade é o que move tudo o que faz. Apaixonada por descobrir o mundo, ama viajar e se inspirar em novas culturas e experiências.
+                Mari, 32 anos, é formada em Eng. Civil, Marketing e Design, e sua criatividade é o que move tudo o que faz. Apaixonada por descobrir o mundo, ama viajar e se inspirar em novas culturas e experiências.
                 Sempre pronta para ajudar, tem um coração generoso e um jeito acolhedor que conquista todos ao redor. É tão querida que vive rodeada de sobrinhos e afilhados,
                 e faz questão de estar presente na vida de cada um, com muito amor, carinho e boas risadas.
               </p>
