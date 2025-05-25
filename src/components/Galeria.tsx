@@ -6,11 +6,11 @@ const Galeria = () => {
   
   // Placeholder images for the carousel
   const images = [
-    { src: '/uploads/galeria-7.jpg', alt: 'Atividade 1' },
-    { src: '/uploads/galeria-7.jpg', alt: 'Atividade 2' },
-    { src: '/uploads/galeria-7.jpg', alt: 'Atividade 3' },
-    { src: '/uploads/galeria-7.jpg', alt: 'Atividade 4' },
-    { src: '/uploads/galeria-7.jpg', alt: 'Atividade 5' },
+    { src: '/uploads/galeria-7.jpg', alt: 'Atividade 7' },
+    { src: '/uploads/galeria-7.jpg', alt: 'Atividade 8' },
+    { src: '/uploads/galeria-7.jpg', alt: 'Atividade 9' },
+    { src: '/uploads/galeria-10.jpg', alt: 'Atividade 10' },
+    { src: '/uploads/galeria-7.jpg', alt: 'Atividade 11' },
   ];
 
   // Auto-advance carousel every 3 seconds

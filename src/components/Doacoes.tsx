@@ -12,31 +12,32 @@ const Doacoes = () => {
             Cada doação nos ajuda a continuar transformando vidas através da educação e do amor.
           </p>
           
-          <div className="bg-white rounded-3xl p-8 shadow-xl border-2 border-aqua-blue">
-            <h3 className="text-2xl font-bold mb-6 text-aqua-blue">Dados Bancários</h3>
-            <div className="space-y-4 text-left max-w-md mx-auto">
-              <div className="flex justify-between">
-                <span className="font-semibold text-gray-600">Banco:</span>
-                <span className="text-gray-800">Caixa Econômica Federal</span>
-              </div>
-              <div className="flex justify-between">
-                <span className="font-semibold text-gray-600">Tipo de Conta:</span>
-                <span className="text-gray-800">Poupança pessoa física - 1288</span>
-              </div>
-              <div className="flex justify-between">
-                <span className="font-semibold text-gray-600">Agência:</span>
-                <span className="text-gray-800">0928</span>
-              </div>
-              <div className="flex justify-between">
-                <span className="font-semibold text-gray-600">Conta:</span>
-                <span className="text-gray-800">000758098844-6</span>
-              </div>
-              <div className="flex justify-between">
-                <span className="font-semibold text-gray-600">PIX:</span>
-                <span className="text-gray-800">aquarelandoprojeto@gmail.com</span>
+           <div className="bg-white rounded-3xl p-8 shadow-xl border-2 border-aqua-blue">
+              <h3 className="text-2xl font-bold mb-6 text-aqua-blue">Dados Bancários</h3>
+              <div className="space-y-4 text-left max-w-md mx-auto">
+                <div className="flex justify-between">
+                  <span className="font-semibold text-gray-600">Nome da Empresa:</span>
+                  <span className="text-gray-800">ONG Amigos E Eu</span>
+                </div>
+                  <div className="flex justify-between">
+                  <span className="font-semibold text-gray-600">Instituição:</span>
+                  <span className="text-gray-800">Cora SCFI - 403</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="font-semibold text-gray-600">Agência:</span>
+                  <span className="text-gray-800">0001</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="font-semibold text-gray-600">Conta:</span>
+                  <span className="text-gray-800">5194003-3</span>
+                </div>
+                             
+                <div className="flex justify-between">
+                  <span className="font-semibold text-gray-600">PIX:</span>
+                  <span className="text-gray-800"> CNPJ: 32.308.219/0001-49</span>
+                </div>
               </div>
             </div>
-          </div>
         </div>
       </div>
     </section>
