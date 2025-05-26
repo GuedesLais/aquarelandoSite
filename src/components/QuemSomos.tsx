@@ -8,7 +8,7 @@ const QuemSomos = () => {
             Quem Somos
           </h2>
           <p className="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
-            Somos duas amigas que se conheceram no 2º ano do ensino fundamental e permanecemos unidas até hoje. 
+            Somos duas amigas que se conheceram no 5º ano do ensino fundamental e permanecemos unidas até hoje. 
             Uma sempre topando todas as ideias da outra, decidimos transformar nossa amizade em uma força para o bem.
           </p>
         </div>

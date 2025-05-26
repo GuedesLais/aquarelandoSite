@@ -34,25 +34,28 @@ const AmigosEu = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Header - Agora transparente com animações */}
-      <header className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-aqua-orange/20 via-aqua-purple/20 to-aqua-blue/20 backdrop-blur-sm">
+      <header className="fixed top-0 left-0 right-0 z-50 h-20 md:h-24 flex items-center bg-gradient-to-r from-aqua-orange/20 via-aqua-purple/20 to-aqua-blue/20 backdrop-blur-sm">
+
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between py-4">
-            {/* Logo com elementos animados - Tamanho aumentado */}
+           
             <div className="relative">
               <a href="/">
                 <img 
                   src="/uploads/a45d6356-ba89-4bda-a24e-42533899d6ff.png" 
                   alt="Amigos & Eu" 
-                  className="h-16 md:h-20 w-auto" /* Aumentado de h-12 para h-16/h-20 */
+                  className="max-h-16 md:max-h-20 w-auto mx-auto object-contain"
+
+ 
                 />
               </a>
-              {/* Elementos flutuantes animados - Ajustados para o logo maior */}
+              
               <div className="absolute -top-3 -right-3 w-4 h-4 bg-aqua-orange rounded-full animate-float opacity-70"></div>
               <div className="absolute top-8 -left-3 w-3 h-3 bg-aqua-blue rounded-full animate-float delay-1000 opacity-70"></div>
               <div className="absolute -bottom-3 right-6 w-3 h-3 bg-aqua-purple rounded-full animate-float delay-2000 opacity-70"></div>
             </div>
 
-            {/* Desktop Navigation */}
+            
             <nav className="hidden md:flex space-x-8">
               <button 
                 onClick={() => scrollToSection('quem-somos')}
@@ -86,7 +89,7 @@ const AmigosEu = () => {
               </button>
             </nav>
 
-            {/* Mobile Menu Button */}
+            
             <button 
               className="md:hidden p-2 text-blue-600"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -204,10 +207,10 @@ const AmigosEu = () => {
               </div>
               <div className="bg-white rounded-3xl p-8 shadow-xl">
                 <h3 className="text-2xl font-bold text-aqua-orange mb-4">Celi Magalhães</h3>
-                <h4 className="text-lg font-semibold text-pink-300 mb-4">Nossa Diretora</h4>
+                <h4 className="text-lg font-semibold text-pink-300 mb-4">Nossa Presidente</h4>
                 <p className="text-gray-700 leading-relaxed">
                   Há 7 anos, ela decidiu transformar amor em ação.
-                  Fundadora da ONG Amigos e Eu, iniciou em Jundiapeba e hoje, no bairro Caulim — Suzano, acolhe e inspira mais de 120 crianças em situação de vulnerabilidade com aulas de balé, capoeira, futebol e zumba.
+                  Fundadora da ONG Amigos e Eu, iniciou em Jundiapeba e hoje em Suzano, acolhe e inspira mais de 120 crianças em situação de vulnerabilidade com aulas de balé, capoeira, futebol e zumba.
                   <br /><br />
                   Pedagoga, futura advogada, mãe, esposa e amiga — ela é a alma que move esse projeto com carinho, firmeza e esperança.
                   <br /><br />
